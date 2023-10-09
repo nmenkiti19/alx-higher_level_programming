@@ -1,0 +1,45 @@
+class that inherits from list:
+    >>> MyList = __import__('1-my_list').MyList
+
+    >>> my_list = MyList()
+    >>> my_list.append(2)
+    >>> my_list.append(4)
+    >>> my_list.append(6)
+    >>> my_list.append(8)
+    >>> my_list.append(9)
+    >>> print(my_list)
+    [2, 4, 6, 8, 9]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [2, 4, 6, 8, 9]
+    >>> del my_list
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+    >>> my_list.append(-2)
+    >>> my_list.append(-4)
+    >>> my_list.append(-6)
+    >>> my_list.append(-8)
+    >>> my_list.append(-9)
+    >>> my_list.print_sorted()
+    [-2, -4, -6, -8, -9]
+    >>> my_list.append(3)
+    >>> my_list.append(0)
+    >>> my_list.print_sorted()
+    [-9, -8, -6, -4, -2, 0, 3]
+    >>> del my_list
+    >>> my_list = MyList()
+    >>> my_list.append(0)
+    >>> my_list.append(0)
+    >>> my_list.append(0)
+    >>> my_list.print_sorted()
+    [0, 0, 0]
+    >>> del my_list
+    >>> my_list = MyList()
+    >>> my_list.append(-2)
+    >>> my_list.append(2)
+    >>> my_list.append(6)
+    >>> my_list.print_sorted()
+    [-2, 2, 6]
+
