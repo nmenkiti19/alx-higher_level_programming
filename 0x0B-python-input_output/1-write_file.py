@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-# 1-number_of_lines.py
-def number_of_lines(filename=""):
-    """writes string to text file"""
-    lynz = 0
-    with open(filename) as fyl:
-        for line in fyl:
-            lynz += 1
-    return lynz
+# 1-write_file.py
+"""writes to file."""
+
+
+def write_file(filename="", text=""):
+    """Writes to a text file
+        returns no of xters written
+    """
+    with open(filename, "w", encoding="utf-8") as fyl:
+        return fyl.write(text)
